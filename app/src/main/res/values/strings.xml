@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">temaDAM</string>
+    <string name="btn_login">Login</string>
+    <string name="tb_nume">Nume</string>
+    <string name="Plain_email">E-mail, username or phone</string>
+    <string name="Plain_password">Password</string>
+    <string name="textPass">Password</string>
+    <string name="stringNume">First Name</string>
+    <string name="stringLastName">Last Name</string>
+    <string name="stringfirst">First Name</string>
+    <string name="strLast">Last Name</string>
+    <string name="strmail" />
+    <string name="strEmail">Email or Phone</string>
+    <string name="strPass">Password</string>
+    <string name="strDate">Date of Birth</string>
+</resources>
