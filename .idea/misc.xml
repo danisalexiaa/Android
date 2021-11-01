@@ -3,10 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Andrei/Desktop/dam-master3/dam-master3/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Andrei/Desktop/dam-master3/dam-master3/app/src/main/res/layout/activity_main2.xml" value="0.1" />
+        <entry key="..\:/Users/Andrei/Desktop/dam-master3/dam-master3/app/src/main/res/layout/activity_main_sign_up.xml" value="0.1" />
+        <entry key="..\:/Users/Andrei/Desktop/dam-master3/dam-master3/app/src/main/res/layout/item_menu.xml" value="0.33" />
         <entry key="..\:/Users/Andrei/Documents/dam-master/app/src/main/res/layout/activity_main.xml" value="0.26856884057971014" />
         <entry key="..\:/Users/Andrei/Documents/dam-master/app/src/main/res/layout/activity_main2.xml" value="0.25" />
         <entry key="..\:/Users/Andrei/Documents/dam-master/app/src/main/res/layout/activity_main_sign_up.xml" value="0.33" />
         <entry key="..\:/Users/User/AndroidStudioProjects/temaDAM/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/User/Downloads/DAM/dam-master/app/src/main/res/layout/activity_main2.xml" value="0.22644927536231885" />
+        <entry key="..\:/Users/User/Downloads/DAM/dam-master/app/src/main/res/layout/activity_main_sign_up.xml" value="0.22644927536231885" />
+        <entry key="..\:/Users/User/Downloads/DAM/dam-master/app/src/main/res/layout/item_menu.xml" value="0.1" />
       </map>
     </option>
   </component>
