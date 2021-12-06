@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.ColorSpace;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -18,6 +19,8 @@ public class MainActivity2 extends AppCompatActivity {
     private ListView listView;
     private Adapter twtAdapter;
 
+    private PersoanaDAO persoanaDAO;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +29,8 @@ public class MainActivity2 extends AppCompatActivity {
 
         twtAdapter = new Adapter(getList());
         listView.setAdapter(twtAdapter);
+
+        persoanaDAO = Database.getInstance(this).getDatabase().persoanaDAO();
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -80,6 +85,23 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
         thread.start();
+
+        Thread threadbd = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                List<Persoana> lista = getPersoana();
+                //persoanaDAO.insertAll(lista.get(0), lista.get(1));
+
+                for(int i = 0; i<lista.size(); i++){
+                    persoanaDAO.insertAll(lista.get(i));
+                }
+
+                List<Persoana> listaMail = persoanaDAO.getPersoanaNume("email@gmail.com");
+                Log.v("Lungime email", listaMail.toString());
+
+            }
+        });
+        threadbd.start();
     }
 
     private List<Tweets> getList() {
@@ -108,5 +130,16 @@ public class MainActivity2 extends AppCompatActivity {
         lista.add(tweet3);
 
         return (lista);
+    }
+
+    public List<Persoana> getPersoana(){
+        Persoana pers1 = new Persoana("john", "john@mail.com", "14/01/1998", "password");
+        Persoana pers2 = new Persoana("jim", "jim@yahoo.com", "7/02/1999", "password2");
+
+        List<Persoana> lista = new ArrayList<>();
+        lista.add(pers1);
+        lista.add(pers2);
+        return lista;
+
     }
 }

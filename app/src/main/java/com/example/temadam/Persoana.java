@@ -1,11 +1,27 @@
 package com.example.temadam;
 
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import java.io.Serializable;
 
+@Entity(tableName = "Persoana")
+
 public class Persoana implements Serializable {
+    @PrimaryKey(autoGenerate = true)
+    private int id;
+
+    @ColumnInfo(name = "first name")
     private String FirstName;
+
+    @ColumnInfo(name = "Email")
     private String Email;
+
+    @ColumnInfo(name = "Date of Birth")
     private String dob;
+
+    @ColumnInfo(name = "Password")
     private String Password;
 
     public Persoana(String firstName, String email, String dob, String password) {
@@ -16,6 +32,14 @@ public class Persoana implements Serializable {
     }
 
     public Persoana() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getFirstName() {
@@ -53,6 +77,7 @@ public class Persoana implements Serializable {
     @Override
     public String toString() {
         return "Persoana{" +
+                "id='" + id + '\'' +
                 "FirstName='" + FirstName + '\'' +
                 ", Email='" + Email + '\'' +
                 ", dob='" + dob + '\'' +
