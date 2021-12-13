@@ -13,6 +13,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Log.v("Lifecycle", "onCreate");
+
+
 
         btnLogin = (findViewById(R.id.button2));
         button = (findViewById(R.id.button));
@@ -55,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
     }
 
     @Override
@@ -106,5 +115,4 @@ public class MainActivity extends AppCompatActivity {
 
         Log.v("Lifecycle", "onDestroy");
     }
-
 }

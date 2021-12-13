@@ -7,6 +7,9 @@ public class Tweets {
     private String mail;
     private String text;
 
+    public Tweets() {
+    }
+
     public Tweets(int image, String nume, String user, String mail, String text) {
         this.image = image;
         this.nume = nume;

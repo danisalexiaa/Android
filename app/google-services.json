@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "374412535571",
+    "project_id": "tema6-a996d",
+    "storage_bucket": "tema6-a996d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:374412535571:android:b050d2038868bef9501ce6",
+        "android_client_info": {
+          "package_name": "com.example.temadam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "374412535571-eppfu61r020bmd8ovii0tduqi2pc1n20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnogIRusvQu5c7hoQGtZiiHu_5Wd8w_9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "374412535571-eppfu61r020bmd8ovii0tduqi2pc1n20.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
